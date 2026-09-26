@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RSVP Submission | Wedding RSVP</title>
+    <link rel="stylesheet" href="/rsvp.css">
+    <link rel="stylesheet" href="/variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+    <link rel="icon" href="pictures/wedding-icon.png">
+
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <!-- Firebase Realtime Database -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+</head>
+<body>
+
+    <h1>Wedding RSVP</h1>
+    
+<div id="deadlineNotice"></div>
+
+<h1 id="familyTitle">Loading RSVP...</h1>
+
+<form id="rsvpForm" style="display:none;">
+  <div id="membersContainer"></div>
+
+  <br><br>
+  <label for="comment">Additional Comments or Requests (optional):</label><br/>
+  <textarea id="comment" name="comment" placeholder="Write your comment here..."></textarea><br/>
+
+  <button type="submit">Submit RSVP</button>
+</form>
+
+<footer>
+  <p>&copy; 2026 • <span>Wedding RSVP</span> | All Rights Reserved.<br>Designed & Developed By <a href="https://nero404-dev.github.io/nero404-portfolio/">nero404</a></p>
+</footer>
+
+<script type="module" src="rsvp.js"></script>
+
+</body>
+</html>

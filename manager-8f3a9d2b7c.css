@@ -1,0 +1,179 @@
+body {
+    color: #444;
+}
+
+h1 {
+    text-align: center;
+    margin: 35px 0;
+}
+
+h1, h2, h3 {
+    color: #33863d;
+}
+
+.manager-columns {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.column {
+    /* flex: 1; */
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.col-1 {
+    width: 40%;
+}
+
+.col-2 {
+    width: 60%;
+}
+
+.family {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.family-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.family-header input[type="text"] {
+    flex: 1;
+    padding: 6px;
+    font-size: 16px;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    background: #33863d;
+    color: white;
+    font-weight: bold;
+}
+
+.btn.red {
+    background: #ff8d8d;
+}
+
+.btn.small {
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+.members {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.member input[type="text"] {
+    flex: 1;
+    padding: 5px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.phone-input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 6px;
+    font-size: 16px;
+}
+
+.save-url {
+    margin-top: 8px;
+    font-size: 14px;
+    color: green;
+    word-break: break-all;
+}
+
+.status-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.status-table th, .status-table td {
+    border: 1px solid #ccc;
+    padding: 6px 8px;
+    text-align: left;
+}
+
+.bottom-row {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.bottom-row > * {
+    flex: 1;
+}
+
+.section-box {
+    background: var(--cream);
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+table {
+    background-color: var(--cream);
+}
+
+#loginScreen {
+    text-align: center;
+    margin: 35px 0;
+}
+
+@media screen and (max-width: 432px) {
+    h1 {
+        width: 90%;
+        margin: 35px auto;
+    }
+    button {
+        margin: 20px 5px;
+    }
+    .manager-columns {
+        display: block;
+        gap: unset;
+    }
+    .column {
+        max-height: 70vh;
+    }
+    .col-1 {
+        width: 90%;
+        margin: 15px auto;
+    }
+    .col-2 {
+        width: 90%;
+        margin: 15px auto;
+    }
+    #loginScreen {
+        width: 90%;
+        margin: 35px auto;
+    }
+}

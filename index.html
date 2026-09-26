@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Wedding RSVP</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+    <link rel="icon" href="pictures/wedding-icon.png">
+</head>
+<body>
+
+    <div id="mobileWarning" style="display:none;">
+        <div class="warning-box">
+            <button id="closeWarning">✕</button>
+            <p>Open on <u>Desktop</u> for better experience view!</p>
+        </div>
+    </div>
+
+    <div id="preloader">
+        <div class="dot-spinner">
+            <div class="dot-spinner__dot odd"></div>
+            <div class="dot-spinner__dot even"></div>
+            <div class="dot-spinner__dot odd"></div>
+            <div class="dot-spinner__dot even"></div>
+            <div class="dot-spinner__dot odd"></div>
+            <div class="dot-spinner__dot even"></div>
+            <div class="dot-spinner__dot odd"></div>
+            <div class="dot-spinner__dot even"></div>
+        </div>
+    </div>
+
+    <div class="body" id="content">
+        <div class="intro" id="hero">
+            <audio id="bg-music" loop>
+                <source src="audio/we-are.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <div class="btn-music">
+                <button id="music-btn">🔊 Mute</button>
+            </div>
+    
+            <div class="card">
+                <div class="back">
+                    <!-- <img src="pictures/birthday02.png" alt=""> -->
+                </div>
+                <div class="front">
+                    <!-- <img src="pictures/birthday03.png" alt=""> -->
+                </div>
+                <div class="container">
+                    <p id="head">Adam & Eve</p>
+                    <p>We will be sharing our great day with you! The waiting is gone now</p>
+                    <p id="foot">Welcome to our wedding !!</p>
+                </div>
+            </div>
+    
+            <div class="btn-open">
+                <button id="openInviteBtn">
+                    Open Invitation <i class="fa fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- <h1>sucbubv</h1> -->
+
+        <main>
+            <header>
+                <nav>
+                    <a href="#" data-target="hero">Home</a>
+                    <a href="#" data-target="story">Our Story</a>
+                    <a href="#" data-target="weddingDetails">Wedding Details</a>
+                    <a href="#" data-target="giftRegistry">Gift Registry</a>
+                    <a href="#" data-target="gallery">Gallery</a>
+                    <!-- <a href="#" data-target="sharing">Share Yours</a> -->
+                    <!-- <a href="#" data-target="rsvp">RSVP</a> -->
+                    <a href="#" data-target="contact">Contact Us</a>
+                </nav>
+
+                <div class="dashes">
+                    <!-- <span style="cursor:pointer" onclick="openNav()">&#9776;</span> -->
+                    <div class="mob-menu-btn-wrap flex">
+                        <a class="mob-menu-btn" onclick="openNav()">
+                            <div class="hamburger">
+                                <span class="hamburger-line hamburger-line-top"></span>
+                                <span class="hamburger-line hamburger-line-middle"></span>
+                                <span class="hamburger-line hamburger-line-bottom"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        
+                    <div class="sidenav-links">
+                        <a href="#" data-target="hero">Home</a>
+                        <a href="#" data-target="story">Our Story</a>
+                        <a href="#" data-target="weddingDetails">Wedding Details</a>
+                        <a href="#" data-target="giftRegistry">Gift Registry</a>
+                        <a href="#" data-target="gallery">Gallery</a>
+                        <!-- <a href="#" data-target="sharing">Share Yours</a> -->
+                        <!-- <a href="#" data-target="rsvp">RSVP</a> -->
+                        <a href="#" data-target="contact">Contact Us</a>
+                    </div>
+            
+                    <div class="separator">
+                        <hr class="line">
+                        <img src="pictures/wedding-icon.png" alt="Separator Image" class="separator-image">
+                        <hr class="line">
+                    </div>
+            
+                    <div class="resp-social-links">
+                        <a href="https://www.instagram.com/nero404_dev/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </header>
+
+            <section class="story" id="story">
+                <h2>Our Story</h2>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </section>
+
+            <div class="separator-bg">
+                <div class="image"></div>
+            </div>
+
+            <section class="wedding_details" id="weddingDetails">
+                <h2>Wedding Details</h2>
+
+                <h3>Wedding Date/Time</h3>
+                <p>22/4/2026 - 21:00:00</p>
+
+                <h3>Wedding Location</h3>
+                <div class="iframe">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d783.2723621949602!2d35.50444427865556!3d33.896538714721174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f16e695d8eb95%3A0x3653231d7d95eabc!2sPlace%20de%20l&#39;%C3%89toile!5e0!3m2!1sen!2slb!4v1776105015476!5m2!1sen!2slb" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+
+            <section class="gift_registry" id="giftRegistry">
+                <h2>Gift Registry</h2>
+
+                <p>For those who wish, a wedding gift registry is available at <u>Whish Money</u> through scanning this <b>QR-Code</b>:</p>
+                <div class="qr-code">
+                    <a href="https://whish.money/pay/DE3sBRRUE"><img src="pictures/IMG_3095.JPG" alt="Payment QR-Code"></a>
+                    <a id="link" href="https://whish.money/pay/DE3sBRRUE">Scan the QR-Code above or Click here</a>
+                </div>
+                <p>Although your love, laughter and presence are all we could wish for on our special day.</p>
+            </section>
+
+            <section class="gallery" id="gallery">
+                <h2>Gallery</h2>
+
+                <h3>Pictures</h3>
+                <div class="cats">
+                    <div class="cat">
+                        <img class="clickable-img" src="gallery/pictures/asdrubal-luna-72vXlOXbp6E-unsplash.jpg" alt="">
+                        <img class="clickable-img" src="gallery/pictures/cansu-hangul-n8nTDPWIA9g-unsplash.jpg" alt="">
+                        <img class="clickable-img" src="gallery/pictures/nathan-dumlao-9UDwXxaPxZc-unsplash.jpg" alt="">
+                        <img class="clickable-img" src="gallery/pictures/nathan-dumlao-BOhDR9n4u2s-unsplash.jpg" alt="">
+                        <img class="clickable-img" src="gallery/pictures/nathan-dumlao-H_cZqryUuok-unsplash.jpg" alt="">
+                        <img class="clickable-img" src="gallery/pictures/vadim-paripa-tEFItLGn0uc-unsplash.jpg" alt="">
+                    </div>
+                </div>
+                <p class="scroll">scroll<i class="fa fa-long-arrow-right" aria-hidden="true"></i></p>
+
+                <h3>Videos</h3>
+                <div class="cats">
+                    <div class="cat">
+                        <video playsinline controls loop>
+                            <source src="gallery/videos/9122066-sd_360_640_25fps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video playsinline controls loop>
+                            <source src="gallery/videos/9122066-sd_360_640_25fps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video playsinline controls loop>
+                            <source src="gallery/videos/9122066-sd_360_640_25fps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video playsinline controls loop>
+                            <source src="gallery/videos/9122066-sd_360_640_25fps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video playsinline controls loop>
+                            <source src="gallery/videos/9122066-sd_360_640_25fps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video playsinline controls loop>
+                            <source src="gallery/videos/9122066-sd_360_640_25fps.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <h3>Share Yours (Pictures / Videos)</h3>
+                <div class="shots_share_link">
+                    <a href="https://wa.me/96176134251/">Click here & Share with us your shots<i class="fa fa-whatsapp" aria-hidden="true"></i>📸</a>
+                </div>
+            </section>
+
+            <!-- <section class="rsvp" id="rsvp">
+                <h2>RSVP</h2>
+
+                <div class="btn-open">
+                    <button id="openInviteBtn">
+                        Open Invitation <i class="fa fa-angle-right"></i>
+                    </button>
+                </div>
+            </section> -->
+        </main>
+    
+        <div class="footerContainer" id="contact">
+            <div class="footer">
+                <!-- <div class="row row-1">
+                    <div class="logo">
+                        <img src="pictures/wedding-icon.png" alt="Logo">
+                    </div>
+                </div> -->
+                <div class="row row-2">
+                    <div class="col col-1">
+                        <h3>Wedding RSVP</h3>
+                        <p>Mark your unforgettable moments. Thanks for letting us live this big honor with you being around!</p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/nero404_dev/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.tiktok.com/"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <!-- <div class="col col-2">
+                        <h3>Navigation</h3>
+                        <div class="navs">
+                            <a href="#" data-target="hero">Home</a>
+                            <a href="#" data-target="venues">Venues</a>
+                            <a href="#" data-target="reservation">Reservation</a>
+                            <a href="#" data-target="locations">Locations</a>
+                            <a href="#" data-target="menu">Menu</a>
+                            <a href="#" data-target="team">Team</a>
+                            <a href="#" data-target="special-nights">Special Nights</a>
+                            <a href="#" data-target="gallery">Gallery</a>
+                            <a href="#" data-target="services">Services</a>
+                            <a href="#" data-target="contact">Contact</a>
+                        </div>
+                    </div> -->
+                    <div class="col col-3">
+                        <h3>Navigation</h3>
+                        <a href="#" data-target="hero">Home</a>
+                        <a href="#" data-target="story">Our Story</a>
+                        <a href="#" data-target="weddingDetails">Wedding Details</a>
+                        <a href="#" data-target="giftRegistry">Gift Registry</a>
+                        <a href="#" data-target="gallery">Gallery</a>
+                    </div>
+                    <div class="col col-4">
+                        <h3>General Contact Info</h3>
+                        <a href="mailto:nero404.developer@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> General Email: <br>nero404.developer@gmail.com</a>
+                        <a href="tel:+96176134251"><i class="fa fa-phone" aria-hidden="true"></i> General Phone: <br>+961 76 134 251</a>
+                    </div>
+                </div>
+                <!-- <div id="footer-hr"></div>
+                <div class="row row-3">
+                    <a href="https://www.instagram.com/zad.al.baher/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/people/zadalbaher/61560332219840/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.tiktok.com/@zad.al.baher"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                </div> -->
+                <div class="separator">
+                    <hr class="line line-1">
+                    <img src="pictures/wedding-icon.png" alt="Separator Image" class="separator-image">
+                    <hr class="line line-2">
+                </div>
+                <div class="row row-3">
+                    <div class="col col-1">
+                        <p>&copy; 2026 • <span>Wedding RSVP</span> | All Rights Reserved.</p>
+                    </div>
+                    <div class="col col-2">
+                        <p>Designed & Developed By <a href="https://nero404-dev.github.io/nero404-portfolio/">nero404</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

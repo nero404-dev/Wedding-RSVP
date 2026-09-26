@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manager Panel | Wedding RSVP</title>
+<link rel="stylesheet" href="/manager-8f3a9d2b7c.css">
+<link rel="stylesheet" href="/variables.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+<link rel="icon" href="pictures/wedding-icon.png">
+
+<script type="module" src="manager-8f3a9d2b7c.js"></script>
+</head>
+<body>
+    <!-- Login Screen -->
+    <div id="loginScreen">
+        <h2>Manager Access</h2>
+        <input type="password" id="managerPass" placeholder="Enter password" />
+        <button onclick="checkPassword()">Enter</button>
+        <div id="loginError" style="color:red;"></div>
+    </div>
+
+    <!-- Manager Panel -->
+    <div id="managerContent" style="display:none;">
+        <h1>Wedding Manager Panel</h1>
+        <div class="manager-columns">
+            
+            <!-- Column 1: Families -->
+            <div class="column col-1">
+                <div id="familiesSection">
+                    <h2>Families</h2>
+                    <div id="familiesContainer"></div>
+                    <button type="button" id="addFamilyBtn">➕ Add Family</button>
+                </div>
+            </div>
+
+            <!-- Column 2: RSVP Status + Deadline + Export -->
+            <div class="column col-2">
+                <!-- <div class="section-box" style="margin-top:10px;">
+                    <h3>Set RSVP Deadline</h3>
+                    <label>Deadline (MM-DD-YYYY):</label>
+                    <input type="date" id="deadlineInput">
+                    <button id="saveDeadlineBtn">Save Deadline</button>
+                    <p id="deadlineMsg" style="margin-top:10px;"></p>
+                </div> -->
+
+                <div class="section-box" style="margin-top:10px;">
+                    <h3>Export RSVP Data</h3>
+                    <button id="exportPdfBtn">📄 Export as PDF</button>
+                    <button id="exportTxtBtn">📄 Export as TXT</button>
+                    <button id="exportCsvBtn">📄 Export as CSV</button>
+                    <p id="exportMsg" style="margin-top:10px;"></p>
+                </div>
+
+                <h2>RSVP Status</h2>
+                <div id="statusPanel"></div>  <!-- RSVP table will go here -->
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 • <span>Wedding RSVP</span> | All Rights Reserved.<br>Designed & Developed By <a href="https://nero404-dev.github.io/nero404-portfolio/">nero404</a></p>
+    </footer>
+
+    <script>
+        const CORRECT_PASS = "password2025";
+        function checkPassword() {
+            const entered = document.getElementById('managerPass').value;
+            if (entered === CORRECT_PASS) {
+                document.getElementById('loginScreen').style.display = 'none';
+                document.getElementById('managerContent').style.display = 'block';
+            } else {
+                document.getElementById('loginError').textContent = "Wrong password!";
+            }
+        }
+        // Enter key support
+        document.getElementById('managerPass').addEventListener('keypress', function (event) {
+            if (event.key === 'Enter') {
+                checkPassword();
+            }
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    
+</body>  
+</html>
